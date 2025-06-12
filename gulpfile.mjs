@@ -76,16 +76,18 @@ const compileScripts = () => {
 
 // Images
 const compileImages = () => {
-  return src(paths.images.src).pipe(dest(paths.images.dest))
+  return src(paths.images.src, { encoding: false }).pipe(
+    dest(paths.images.dest)
+  )
 }
 
 const compileIcons = () => {
-  return src(paths.icons.src).pipe(dest(paths.icons.dest))
+  return src(paths.icons.src, { encoding: false }).pipe(dest(paths.icons.dest))
 }
 
 // Fonts
 const compileFonts = () => {
-  return src(paths.fonts.src).pipe(dest(paths.fonts.dest))
+  return src(paths.fonts.src, { encoding: false }).pipe(dest(paths.fonts.dest))
 }
 
 // Сервер
