@@ -1,0 +1,104 @@
+include ../../ui/button/button.pug
+include ../../ui/card/card.pug
+
+section
+  .container
+    .companies__wrapper
+      div
+        h3 Work with exciting companies
+        p._small.companies__description Discover more than 1,600 open positions
+
+      .companies__buttons
+        +Button({
+          icon: 'assets/icons/arrow-left.svg',
+          variant: 'outline',
+          className: 'companies__button',
+          id: 'companies-slider-prev'
+        })
+        +Button({
+          icon: 'assets/icons/arrow-right.svg',
+          variant: 'outline',
+          className: 'companies__button',
+          id: 'companies-slider-next'
+        })
+
+    #companies-slider.companies__slider.swiper
+      .swiper-wrapper
+        +Card({
+          icon: 'assets/images/dribble.svg',
+          title: 'Dribble',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '65 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })
+        +Card({
+          icon: 'assets/images/paypal.svg',
+          title: 'Spotify',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '6000 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })
+        +Card({
+          icon: 'assets/images/spotify.svg',
+          title: 'Spotify',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '2000 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })
+        +Card({
+          icon: 'assets/images/dribble.svg',
+          title: 'Dribble',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '65 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })
+        +Card({
+          icon: 'assets/images/paypal.svg',
+          title: 'Spotify',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '6000 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })
+        +Card({
+          icon: 'assets/images/spotify.svg',
+          title: 'Spotify',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis, metus gravida tristique.',
+          marks: [
+            {
+              text: '2000 Employees',
+              color: 'green'
+            }
+          ],
+          className: 'companies__card swiper-slide',
+          link: '#'
+        })

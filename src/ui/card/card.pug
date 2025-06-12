@@ -1,0 +1,30 @@
+mixin Card({ icon, title, subtitle, heading, description, marks, location, pay, className, link })
+  a.card(href=link, class=className)
+    .card__header
+      img.card__icon(src=icon, alt=title)
+      p._big= title
+      if subtitle
+        p._small= subtitle
+
+    if heading
+      h6= heading
+
+    if description
+      p= description
+
+    if marks
+      .card__wrapper
+        each mark in marks
+          p._small.card__mark(class=`_${mark.color}`)= mark.text
+
+    if location || pay
+      .card__wrapper._big
+        if location
+          .card__info
+            img.card__info-icon(src='assets/icons/place.svg', alt='location')
+            p._small._bold= location
+
+        if pay
+          .card__info
+            img.card__info-icon(src='assets/icons/money.svg', alt='pay')
+            p._small._bold= pay

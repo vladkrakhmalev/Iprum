@@ -1,0 +1,12 @@
+mixin Button({ text = '', icon, variant='primary', disabled, className, id })
+  - let variantClass = '_primary'
+  if variant === 'secondary'
+    - variantClass = '_secondary'
+  if variant === 'outline'
+    - variantClass = '_outline'
+
+  button(class=`button ${text.length ? '' : '_small'} ${variantClass} ${className}` disabled=disabled id=id)
+    if icon
+      img.button__icon(src=icon, alt="")
+    if text
+      span= text

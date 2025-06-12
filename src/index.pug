@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title IPRUM – Find the most exciting jobs in tech
+    link(rel="stylesheet", href="index.css")
+    link(rel="icon", type="image/svg+xml", href="assets/icons/favicon.svg")
+  body
+    include blocks/header/header.pug
+    main
+      include blocks/hero/hero.pug
+      include blocks/jobs/jobs.pug
+      //- include blocks/companies/companies.pug
+      include blocks/membership/membership.pug
+      include blocks/explore-job/exploreJob.pug
+      include blocks/footer/footer.pug
+    script(src="index.js" type="module")

@@ -1,0 +1,14 @@
+include ../button/button.pug
+
+mixin Input({ placeholder, button, icon, className })
+  .input(class=className)
+    if icon
+      .input__icon
+        img(src=icon alt="")
+    input.input__field(
+      type="text"
+      placeholder=placeholder
+    )
+    if button
+      +Button({ text: button, className: 'input__button' })
+

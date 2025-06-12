@@ -1,0 +1,128 @@
+include ../../ui/button/button.pug
+include ../../ui/card/card.pug
+
+section.jobs
+  .container
+    .jobs__content
+      h3 Explore the latest job openings
+      p.jobs__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna.
+      +Button({
+        text: 'See All Jobs',
+        className: 'jobs__button'
+      })
+
+    .jobs__list
+      +Card({
+        icon: 'assets/images/dribble.svg',
+        title: 'Dribble',
+        subtitle: 'October 25, 2022',
+        heading: 'Front End Developer',
+        marks: [
+          {
+            text: 'Marketing',
+            color: 'blue',
+          },
+          {
+            text: 'Part Time',
+            color: 'orange'
+          }
+        ],
+        location: 'San Antonio',
+        pay: '$130k-160k',
+        link: '#'
+      })
+      +Card({
+        icon: 'assets/images/dribble.svg',
+        title: 'Dribble',
+        subtitle: 'October 25, 2022',
+        heading: 'Backend Developer',
+        marks: [
+          {
+            text: 'Design',
+            color: 'blue',
+          },
+          {
+            text: 'Full Time',
+            color: 'orange'
+          }
+        ],
+        location: 'Dallas',
+        pay: '$50k-70k',
+        link: '#'
+      })
+      +Card({
+        icon: 'assets/images/slack.svg',
+        title: 'Tokopedia',
+        subtitle: 'March 30, 2021',
+        heading: 'Scrum Master',
+        marks: [
+          {
+            text: 'Marketing',
+            color: 'blue',
+          },
+          {
+            text: 'Part Time',
+            color: 'orange'
+          }
+        ],
+        location: 'San Antonio',
+        pay: '$130k-160k',
+        link: '#'
+      })
+      +Card({
+        icon: 'assets/images/facebook.svg',
+        title: 'Facebook',
+        subtitle: 'March 30, 2021',
+        heading: 'Lead Technical Architect',
+        marks: [
+          {
+            text: 'Technology',
+            color: 'blue',
+          },
+          {
+            text: 'Full Time',
+            color: 'orange'
+          }
+        ],
+        location: 'Melbourne',
+        pay: '$210k-240k',
+        link: '#'
+      })
+      +Card({
+        icon: 'assets/images/spotify.svg',
+        title: 'Spotify',
+        subtitle: 'March 30, 2021',
+        heading: 'Digital Media Strategist',
+        marks: [
+          {
+            text: 'Business',
+            color: 'blue',
+          },
+          {
+            text: 'Casual',
+            color: 'orange'
+          }
+        ],
+        location: 'New York',
+        pay: '$50k-70k',
+        link: '#'
+      })
+      +Card({
+        icon: 'assets/images/paypal.svg',
+        title: 'Paypal',
+        subtitle: 'March 30, 2021',
+        heading: 'Systems Administrator',
+        marks: [
+          {
+            text: 'Business',
+            color: 'blue',
+          },
+          {
+            text: 'Casual',
+            color: 'orange'
+          }
+        ],
+        location: 'California',
+        pay: '$40k-50k',
+        link: '#'
+      })

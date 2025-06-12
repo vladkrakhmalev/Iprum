@@ -1,0 +1,78 @@
+.card {
+  display: grid;
+  gap: 24px;
+  padding: 16px;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-light);
+
+  &[href] {
+    padding: 30px;
+    background-color: var(--bg-white);
+    outline: 0px solid transparent;
+    transition: 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      outline: 4px solid var(--text-primary);
+    }
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 16px;
+  }
+
+  &__icon {
+    grid-row: span 2;
+    padding: 12px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-white);
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 8px;
+
+    &._big {
+      gap: 24px;
+    }
+  }
+
+  &__mark {
+    padding: 6px 12px;
+
+    &._blue {
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
+    }
+
+    &._orange {
+      background-color: var(--bg-orange);
+      color: var(--text-orange);
+    }
+
+    &._green {
+      background-color: var(--bg-green);
+      color: var(--text-green);
+    }
+
+    &._red {
+      background-color: var(--bg-red);
+      color: var(--text-red);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__info-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

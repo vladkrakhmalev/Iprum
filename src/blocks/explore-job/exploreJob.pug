@@ -1,0 +1,18 @@
+include ../../ui/input/input.pug
+
+section
+  .container
+    .explore-job__wrapper
+      .explore-job__icon
+        img(src="assets/icons/search.png", alt="")
+
+      .explore-job__content
+        h4 Explore a job now!
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus pharetra cursus. Suspendisse sodales porta leo, ac placerat ex pretium quis.
+
+      +Input({
+        placeholder: 'Search...',
+        button: 'Search',
+        icon: 'assets/icons/search.svg',
+        className: 'explore-job__input'
+      })

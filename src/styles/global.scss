@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+section {
+  padding: 64px 0;
+
+  @media (max-width: 768px) {
+    padding: 32px 0;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 16px;
+  margin: 0 auto;
+}

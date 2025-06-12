@@ -1,0 +1,82 @@
+.membership {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 104px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+    }
+  }
+
+  &__figure {
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__image {
+    position: relative;
+    object-fit: cover;
+    height: 540px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__caption {
+    position: relative;
+    z-index: 1;
+    background-color: var(--bg-light);
+    max-width: max-content;
+    padding: 16px;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-color: var(--bg-light);
+      bottom: 0;
+    }
+
+    &::before {
+      transform: rotate(45deg) translate(20%, -50%);
+      right: 100%;
+    }
+
+    &::after {
+      transform: rotate(45deg) translate(-50%, 20%);
+      left: 100%;
+    }
+  }
+
+  &__subtitle {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 24px;
+  }
+
+  &__cards {
+    display: grid;
+    gap: 14px;
+
+    @media (max-width: 768px) {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use 'styles/global';
+@use 'styles/variables';
+@use 'styles/typography';
+@use 'styles/fonts';
+
+@use 'blocks/header/header';
+@use 'blocks/hero/hero';
+@use 'blocks/jobs/jobs';
+@use 'blocks/companies/companies';
+@use 'blocks/membership/membership';
+@use 'blocks/explore-job/exploreJob';
+@use 'blocks/footer/footer';
+
+@use 'ui/button/button';
+@use 'ui/input/input';
+@use 'ui/card/card';
+
+@import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css';

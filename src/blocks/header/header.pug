@@ -1,0 +1,21 @@
+include ../../ui/button/button.pug
+
+header.header
+  .container.header__container
+    a(href='/')
+      img.header__logo(src='assets/icons/logo.svg', alt='logo')
+    button.header__open-menu
+      img(src='assets/icons/menu.svg', alt='menu')
+    nav.header__nav
+      ul.header__nav-list
+        li
+          a._link._active(href='/') Home
+        li
+          a._link(href='/company') Company
+        li
+          a._link(href='/blog') Blog
+      button.header__close-menu
+        img(src='assets/icons/close.svg', alt='close' width='18' height='18')
+    .header__buttons
+      a._link(href='/post-job') Post a Job
+      +Button({ text: 'Log in' })

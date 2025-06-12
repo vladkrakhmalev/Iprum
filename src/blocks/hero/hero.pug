@@ -1,0 +1,37 @@
+include ../../ui/input/input.pug
+
+section
+  .container
+    .hero__content
+      p.hero__tooltip Stay connected to get upcoming jobs
+      h2.hero__title Find the most exciting jobs in tech
+      p.hero__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et. Sign in or sign up to get started!
+
+    .hero__wrapper
+      +Input({
+        placeholder: 'Search...',
+        button: 'Search',
+        icon: 'assets/icons/search.svg',
+        className: 'hero__input'
+      })
+      img.hero__image(src="assets/images/main.jpg", alt="")
+
+    ul.hero__logo-list
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-1.svg", alt="")
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-2.svg", alt="")
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-3.svg", alt="")
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-4.svg", alt="")
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-5.svg", alt="")
+      li
+        a.hero__logo-link(href="#")
+          img.hero__logo-img(src="assets/images/main-logo-6.svg", alt="")

@@ -1,0 +1,27 @@
+include ../../ui/input/input.pug
+include ../../ui/button/button.pug
+
+footer.footer
+  .container.footer__container
+    a.footer__logo(href="/")
+      img(src="assets/icons/logo.svg", alt="Iprum")
+
+    .footer__links
+      p._detail Pages
+      nav
+        ul.footer__list
+          li
+            a._link.footer__link(href="#") Home
+          li
+            a._link.footer__link(href="#") Company
+          li
+            a._link.footer__link(href="#") Blog
+    
+    form.footer__form
+      p._detail.footer__form-title Sign up to our newsletter
+      +Input({
+        placeholder: 'Email address'
+      })
+      +Button({
+        text: 'Get Started'
+      })

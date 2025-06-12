@@ -1,0 +1,30 @@
+include ../../ui/card/card.pug
+
+section
+  .container.membership__container
+    figure.membership__figure
+      img.membership__image(src="assets/images/membership.jpg", alt="")
+      figcaption.membership__caption
+        p._small Partnership with Glassdoor and LinkedIn.
+    p._detail._primary.membership__subtitle WHY CHOOSE US
+    .membership__content
+      h3 Build a custom membership site with locked content.
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sitamet pulvinar diam. Sed laoreet feugiat consequat.
+      .membership__cards
+        +Card({
+          icon: 'assets/icons/users.svg',
+          title: 'Add a feature point here',
+          subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        })
+        +Card({
+          icon: 'assets/icons/users.svg',
+          title: 'Add a feature point here',
+          subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        })
+        +Card({
+          icon: 'assets/icons/users.svg',
+          title: 'Add a feature point here',
+          subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        })
+        
+

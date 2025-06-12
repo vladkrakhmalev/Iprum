@@ -1,0 +1,43 @@
+.jobs {
+  padding: 64px 0;
+  background-color: var(--bg-light);
+
+  &__content {
+    display: grid;
+    row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 58px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__description {
+    grid-column: 1;
+
+    @media (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__button {
+    justify-self: end;
+    align-self: end;
+
+    @media (max-width: 768px) {
+      justify-self: stretch;
+      align-self: stretch;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
