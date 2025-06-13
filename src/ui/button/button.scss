@@ -1,4 +1,8 @@
 .button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   padding: 10px 20px;
   border: 1px solid transparent;
@@ -26,8 +30,8 @@
     background-color: var(--bg-primary);
     color: var(--text-white);
 
-    &:focus,
-    &:hover {
+    &:not(:disabled):focus,
+    &:not(:disabled):hover {
       background-color: var(--bg-dark);
     }
 
@@ -36,12 +40,28 @@
     }
   }
 
+  &._secondary {
+    background-color: var(--bg-light);
+    color: var(--text-grey);
+
+    &:not(:disabled):focus,
+    &:not(:disabled):hover {
+      background-color: var(--bg-primary);
+      color: var(--text-white);
+    }
+
+    &:disabled {
+      color: var(--text-white);
+    }
+  }
+
   &._outline {
+    background-color: var(--bg-white);
     border: 1px solid var(--border-light);
     color: var(--text-dark);
 
-    &:focus,
-    &:hover {
+    &:not(:disabled):focus,
+    &:not(:disabled):hover {
       border-color: var(--border-primary);
       color: var(--text-primary);
     }

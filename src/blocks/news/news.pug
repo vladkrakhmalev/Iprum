@@ -1,0 +1,67 @@
+include ../../ui/button/button.pug
+
+section.news
+  .container._small
+    .news__header
+      h3 Get the latest news about jobs!
+      .news__buttons
+        +Button({
+          icon: 'assets/icons/arrow-left.svg',
+          variant: 'outline',
+          id: 'news-slider-prev'
+        })
+        +Button({
+          icon: 'assets/icons/arrow-right.svg',
+          variant: 'outline',
+          id: 'news-slider-next'
+        })
+
+    .news__slider.swiper#news-slider
+      .swiper-wrapper
+        .news__slide.swiper-slide
+          img.news__slide-image(src="assets/images/news-1.jpg", alt="")
+          .news__slide-content
+            p._mark._blue Resources
+            h5 Finding employees in the gigeconomy
+            p._detail._dot October 24, 2022
+            +Button({
+              text: 'Read more',
+              iconAfter: 'assets/icons/arrow-right.svg',
+              variant: 'secondary'
+            })
+
+        .news__slide.swiper-slide
+          img.news__slide-image(src="assets/images/news-2.jpg", alt="")
+          .news__slide-content
+            p._mark._blue Education
+            h5 How to make a great first impression everytime
+            p._detail._dot October 24, 2022
+            +Button({
+              text: 'Read more',
+              iconAfter: 'assets/icons/arrow-right.svg',
+              variant: 'secondary'
+            })
+
+        .news__slide.swiper-slide
+          img.news__slide-image(src="assets/images/news-3.jpg", alt="")
+          .news__slide-content
+            p._mark._blue Trends
+            h5 Find out the best paying careers in 2022
+            p._detail._dot October 24, 2022
+            +Button({
+              text: 'Read more',
+              iconAfter: 'assets/icons/arrow-right.svg',
+              variant: 'secondary'
+            })
+
+        .news__slide.swiper-slide
+          img.news__slide-image(src="assets/images/news-4.jpg", alt="")
+          .news__slide-content
+            p._mark._blue Careers
+            h5 Ten things to nail your next job Interview
+            p._detail._dot March 24, 2021
+            +Button({
+              text: 'Read more',
+              iconAfter: 'assets/icons/arrow-right.svg',
+              variant: 'secondary'
+            })

@@ -41,30 +41,6 @@
     }
   }
 
-  &__mark {
-    padding: 6px 12px;
-
-    &._blue {
-      background-color: var(--bg-secondary);
-      color: var(--text-primary);
-    }
-
-    &._orange {
-      background-color: var(--bg-orange);
-      color: var(--text-orange);
-    }
-
-    &._green {
-      background-color: var(--bg-green);
-      color: var(--text-green);
-    }
-
-    &._red {
-      background-color: var(--bg-red);
-      color: var(--text-red);
-    }
-  }
-
   &__info {
     display: flex;
     align-items: center;

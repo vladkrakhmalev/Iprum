@@ -1,4 +1,4 @@
-mixin Button({ text = '', icon, variant='primary', disabled, className, id })
+mixin Button({ text = '', icon, iconAfter, variant='primary', disabled, className, id })
   - let variantClass = '_primary'
   if variant === 'secondary'
     - variantClass = '_secondary'
@@ -10,3 +10,5 @@ mixin Button({ text = '', icon, variant='primary', disabled, className, id })
       img.button__icon(src=icon, alt="")
     if text
       span= text
+    if iconAfter
+      img.button__icon(src=iconAfter, alt="")

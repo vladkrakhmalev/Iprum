@@ -82,6 +82,11 @@ p {
   &._primary {
     color: var(--text-primary);
   }
+
+  &._dot::before {
+    content: '•';
+    margin-right: 8px;
+  }
 }
 
 a {
@@ -98,5 +103,33 @@ a {
     &:hover {
       color: var(--text-primary);
     }
+  }
+}
+
+._mark {
+  font-size: 14px;
+  line-height: 22.4px;
+  letter-spacing: -0.28px;
+  padding: 6px 12px;
+  max-width: max-content;
+
+  &._blue {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  &._orange {
+    background-color: var(--bg-orange);
+    color: var(--text-orange);
+  }
+
+  &._green {
+    background-color: var(--bg-green);
+    color: var(--text-green);
+  }
+
+  &._red {
+    background-color: var(--bg-red);
+    color: var(--text-red);
   }
 }

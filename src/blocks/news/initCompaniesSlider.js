@@ -1,7 +1,7 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
-export const initCompaniesSlider = () => {
-  new Swiper('#companies-slider', {
+export const initNewsSlider = () => {
+  new Swiper('#news-slider', {
     autoplay: {
       delay: 2500,
       pauseOnMouseEnter: true,
@@ -19,8 +19,8 @@ export const initCompaniesSlider = () => {
       },
     },
     navigation: {
-      nextEl: '#companies-slider-next',
-      prevEl: '#companies-slider-prev',
+      nextEl: '#news-slider-next',
+      prevEl: '#news-slider-prev',
     },
   })
 }

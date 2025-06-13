@@ -1,0 +1,37 @@
+include ../../ui/button/button.pug
+
+section.reviews
+  .container._small
+    p._detail._primary.reviews__subtitle TESTIMONIAL
+    h3.reviews__title See what users say about our job platform
+    .reviews__slider#reviews-slider.swiper
+      .reviews__buttons
+        +Button({
+          icon: 'assets/icons/arrow-left.svg',
+          variant: 'outline',
+          id: 'reviews-slider-prev'
+        })
+        +Button({
+          icon: 'assets/icons/arrow-right.svg',
+          variant: 'outline',
+          id: 'reviews-slider-next'
+        })
+
+      .swiper-wrapper
+        .reviews__slide.swiper-slide
+          .reviews__slide-content
+            p.reviews__slide-text “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”
+            p._primary David Sinclair - Senior Frontend Developer
+          img.reviews__slide-image(src="assets/images/avatar.jpg", alt="Avatar")
+
+        .reviews__slide.swiper-slide
+          .reviews__slide-content
+            p.reviews__slide-text “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”
+            p._primary David Sinclair - Senior Frontend Developer
+          img.reviews__slide-image(src="assets/images/avatar.jpg", alt="Avatar")
+
+        .reviews__slide.swiper-slide
+          .reviews__slide-content
+            p.reviews__slide-text “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”
+            p._primary David Sinclair - Senior Frontend Developer
+          img.reviews__slide-image(src="assets/images/avatar.jpg", alt="Avatar")
